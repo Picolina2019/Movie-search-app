@@ -10,7 +10,7 @@ import {MyContext} from './Context'
 function App() {
   const { state, dispatch } = useContext(MyContext);
 
-  const API_URL = 'http://www.omdbapi.com/?apikey=690435ab';
+  const API_URL = 'https://www.omdbapi.com/?apikey=690435ab';
   useEffect(() => {
     fetchResults();
   }, []);
