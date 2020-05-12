@@ -3,7 +3,7 @@ import './App.css';
 import Search from './components/Search';
 import axios from 'axios';
 import MovieList from './components/MovieList';
-import Info from './Info';
+import Info from './components/Info';
 import {MyContext} from './Context'
 
 

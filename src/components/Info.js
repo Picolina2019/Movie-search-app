@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import '../App.css';
 
 const Info=({selected,close})=>{
     return(
@@ -8,7 +8,7 @@ const Info=({selected,close})=>{
              <h2>{selected.Title}<span>({selected.Year})</span></h2>
              <p className='rating'>Rating:{selected.imdbRating}</p>
              <div className='plot'>
-                 <img src={selected.Poster}/>
+                {selected.Poster ==='N/A' ? (<img src='https://kritka.info/uploads/posts/no_poster.jpg' alt='poster'/> ):  (<img src={selected.Poster} alt='poster'/>)}
                  <p>{selected.Plot}</p>
              </div>
              <button className='close' onClick={close}>Close</button>

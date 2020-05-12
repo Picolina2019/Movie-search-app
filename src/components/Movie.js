@@ -4,7 +4,7 @@ const Movie =({result,open})=>{
 
     return(
         <div className='result' onClick={()=>open(result.imdbID)}>
-          <img src={result.Poster}/>
+          {result.Poster === 'N/A' ? (<img src='https://kritka.info/uploads/posts/no_poster.jpg' alt='poster'/> ) : (<img src={result.Poster} alt='poster'/>)}
           <h3>{result.Title}</h3>  
         </div>
     )
